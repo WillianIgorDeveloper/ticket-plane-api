@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "_version": "22.x",
+  "compilerOptions": {
+    "lib": ["es2024", "ESNext.Array", "ESNext.Collection", "ESNext.Iterator"],
+    "module": "nodenext",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node16",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src"],
+      "@core": ["./src/core"],
+      "@infra": ["./src/infra"],
+      "@view": ["./src/view"],
+      "@v1Controllers": ["./src/view/http/controllers/v1/_index"],
+      "@routes": ["./src/view/http/routes/_index"]
+    }
+  }
+}
